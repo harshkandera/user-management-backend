@@ -11,7 +11,7 @@ const app: Application = express();
 // Middleware
 app.use(cors(
   {
-    origin: ['https://user-management-backend-jxnx.onrender.com/', 'http://localhost:8000'],
+    origin: ['https://user-management-frontend-2nat.vercel.app/', 'http://localhost:3000', 'http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
 ));
