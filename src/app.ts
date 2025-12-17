@@ -9,7 +9,12 @@ import env from './config/env';
 const app: Application = express();
 
 // Middleware
-app.use(cors());
+app.use(cors(
+  {
+    origin: ['https://user-management-backend-jxnx.onrender.com/', 'http://localhost:8000'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  }
+));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
